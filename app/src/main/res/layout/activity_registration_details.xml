@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_screen"
+    tools:context="com.datappsinfotech.gigadocs.RegistrationDetailsActivity">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edit_textDoctorAddress"
+            android:hint="@string/Address"
+            android:background="@color/white_transparent"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textColorHint="@android:color/white"
+            android:drawableRight="@drawable/ic_place_black_24dp"
+            android:padding="@dimen/_14sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_view_I_giveTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="@string/iattendpatient"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="18sp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@drawable/spinner_background">
+            <Spinner
+                android:id="@+id/dropdown_iGivePatient"
+                android:layout_width="match_parent"
+                android:textSize="12sp"
+                android:padding="@dimen/_5sdp"
+                android:layout_height="match_parent">
+            </Spinner>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="18sp"
+            android:text="@string/i_work_in_two_shift"
+            android:fontFamily="sans-serif-condensed"/>
+        <Switch
+            android:id="@+id/switchWorkInTwoShift"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_layoutIWorkFromAndToTitles"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_viewI_work_from"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:text="@string/i_work_from"
+            android:fontFamily="sans-serif-condensed"/>
+        <TextView
+            android:id="@+id/text_viewI_work_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textSize="18sp"
+            android:text="@string/i_work_to"
+            android:fontFamily="sans-serif-condensed"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_layoutIWorkFromAndTo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_viewIWorkFrom"
+            android:layout_weight="1"
+            android:hint="Selcet Time"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_text_border_gray"
+            android:drawableRight="@drawable/ic_expand_more_black_24dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/text_viewIworkTO"
+            android:layout_weight="1"
+            android:hint="Selcet Time"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:padding="@dimen/_4sdp"
+            android:background="@drawable/edit_text_border_gray"
+            android:drawableRight="@drawable/ic_expand_more_black_24dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <android.support.v7.widget.ButtonBarLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/_100sdp"
+        android:layout_marginRight="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@color/lightCyan" />
+    </android.support.v7.widget.ButtonBarLayout>
+</LinearLayout>
+
+
+<!--<TextView-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:textSize="20sp"-->
+<!--android:layout_marginTop="@dimen/_10sdp"-->
+<!--android:layout_marginLeft="@dimen/_30sdp"-->
+<!--android:layout_marginRight="@dimen/_30sdp"-->
+<!--android:gravity="center"-->
+<!--android:padding="@dimen/_5sdp"-->
+<!--android:text="@string/myhospitallogo"/>-->
+
+<!--<de.hdodenhof.circleimageview.CircleImageView-->
+<!--android:id="@+id/circular_imageView"-->
+<!--android:layout_width="@dimen/_100sdp"-->
+<!--android:layout_gravity="center"-->
+<!--android:src="@drawable/circular"-->
+<!--android:background="@android:color/transparent"-->
+<!--app:civ_border_width="2dp"-->
+<!--app:civ_border_color="#ffffff"-->
+<!--android:layout_marginLeft="@dimen/_30sdp"-->
+<!--android:layout_marginRight="@dimen/_30sdp"-->
+<!--android:layout_height="@dimen/_100sdp" />-->

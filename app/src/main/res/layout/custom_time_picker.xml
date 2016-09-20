@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/timepickerxml">
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+    <LinearLayout
+        android:layout_marginTop="350dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:gravity="center"
+        android:id="@+id/cancelbuttonLayout"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_100sdp"
+        android:layout_marginRight="@dimen/_100sdp"
+        android:background="@color/lightCyan"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonCancel"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:background="@color/lightCyan"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.ButtonBarLayout>
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_100sdp"
+        android:layout_marginRight="@dimen/_100sdp"
+        android:background="@color/lightCyan"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonSetTime"
+            android:text="@string/set_time"
+            android:textAllCaps="false"
+            android:background="@color/lightCyan"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.ButtonBarLayout>
+    </LinearLayout>
+
+</FrameLayout>

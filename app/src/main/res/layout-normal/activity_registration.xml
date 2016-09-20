@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_screen"
+    tools:context="com.datappsinfotech.gigadocs.RegistrationActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gigadocs_logo"
+        android:paddingTop="@dimen/_50sdp"
+        android:paddingBottom="@dimen/_50sdp"
+        android:paddingLeft="@dimen/_80sdp"
+        android:paddingRight="@dimen/_80sdp"
+        android:layout_gravity="center" />
+  <LinearLayout
+      android:layout_below="@+id/logo"
+      android:id="@+id/editText_layout"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/edit_textDoctorName"
+        android:hint="@string/user_name"
+        android:background="@color/white_transparent"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:drawableRight="@drawable/ic_person_outline_black_24dp"
+        android:padding="@dimen/_10sdp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:textColorHint="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edit_textDoctorEmail"
+            android:hint="@string/email"
+            android:background="@color/white_transparent"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:textColorHint="@android:color/white"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:inputType="textEmailAddress"
+            android:drawableRight="@drawable/ic_mail_black_24dp"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edit_textDoctorPassword"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:background="@color/white_transparent"
+            android:textColorHint="@android:color/white"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:maxLines="1"
+            android:hint="@string/password"
+            android:drawableRight="@drawable/ic_https_black_24dp"
+            android:layout_height="wrap_content" />
+      <android.support.design.widget.TextInputEditText
+            android:id="@+id/edit_textMobile"
+            android:layout_width="match_parent"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:background="@color/white_transparent"
+            android:textColorHint="@android:color/white"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:maxLines="1"
+            android:hint="Mobile"
+            android:layout_weight="2"
+            android:drawableRight="@drawable/ic_phone_in_talk_black_24dp"
+            android:layout_height="wrap_content" />
+  </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/spinnerLayout"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_below="@+id/editText_layout"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView_speciality"
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/speciality"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_background">
+        <Spinner
+            android:id="@+id/spinnerSpeciality"
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="match_parent">
+            </Spinner>
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.v7.widget.ButtonBarLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@color/lightCyan"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/spinnerLayout"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonNext"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:background="@color/lightCyan"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.ButtonBarLayout>
+
+</RelativeLayout>

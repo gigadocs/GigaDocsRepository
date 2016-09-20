@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appointment_lLinear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_screen"
+    android:orientation="vertical"
+    tools:context=".fragments.AppointmentBookingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_textAppointmentSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_appointment_edit_text"
+            android:hint="@string/appointment_id"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="@dimen/_10sdp"
+            android:textColorHint="@android:color/darker_gray">
+
+            <requestFocus />
+        </EditText>
+        <ImageButton
+            android:id="@+id/buttonSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_appointment_edit_text"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_search_black_24dp" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/list_view" />
+    <include layout="@layout/list_view_one"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="@string/patient_name"
+            android:textSize="@dimen/_13sdp"/>
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:padding="@dimen/_10sdp"
+    android:background="@drawable/bg_appointment_edit_text"
+    android:layout_height="match_parent">
+        <Spinner
+            android:id="@+id/spinnerPatientName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+</LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/_13sdp"
+            android:gravity="center|start"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/Date" />
+
+        <TextView
+            android:id="@+id/text_viewSelcetDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_appointment_edit_text"
+            android:gravity="center"
+            android:hint="@string/select_date"
+            android:padding="@dimen/_10sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:textSize="@dimen/_13sdp"
+            android:text="@string/appointment_slot" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/bg_appointment_edit_text"
+            android:layout_height="match_parent">
+        <Spinner
+            android:id="@+id/spinnerAppointmentSlot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.ButtonBarLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightCyan"
+                android:text="@string/add"
+                android:textColor="@android:color/white" />
+        </android.support.v7.widget.ButtonBarLayout>
+
+        <android.support.v7.widget.ButtonBarLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buttonUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:text="@string/update"
+                android:textColor="@android:color/darker_gray" />
+        </android.support.v7.widget.ButtonBarLayout>
+        <!--<android.support.v7.widget.ButtonBarLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/_3sdp"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/buttonViewAppointment"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="#ffffff"-->
+                <!--android:text="@string/view_data"-->
+                <!--android:textColor="@android:color/darker_gray" />-->
+        <!--</android.support.v7.widget.ButtonBarLayout>-->
+
+    </LinearLayout>
+</LinearLayout>
+

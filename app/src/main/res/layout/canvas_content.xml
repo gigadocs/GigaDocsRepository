@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.datappsinfotech.gigadocs.MyDrawView
+        android:id="@+id/draw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.datappsinfotech.gigadocs.MyDrawView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom|center"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="Save Prescription"
+        android:textColor="#fff"
+        android:background="#22f999"
+        android:layout_marginRight="5dp"
+
+        android:layout_height="match_parent" />
+    <Button
+            android:id="@+id/clearPaint"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="bottom|left"
+            android:background="#009999"
+            android:text="Clear Prescription" />
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

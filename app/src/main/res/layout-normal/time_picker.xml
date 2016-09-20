@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/timepickerxml"
+    android:background="#FEF9E7">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/_10sdp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_viewHours"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:textSize="55dp"
+                android:gravity="end"
+                android:text="--" />
+            <TextView
+                android:id="@+id/text_viewColon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text=":" />
+            <TextView
+                android:id="@+id/text_viewMins"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="55dp"
+                android:text="--" />
+            <TextView
+                android:id="@+id/text_viewAmPm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:text="--" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_160sdp"
+            android:layout_height="wrap_content">
+            <NumberPicker
+                android:id="@+id/hr"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:contextClickable="false"
+                android:background="#FBEEE6"
+                android:solidColor="#FBEEE6"
+                android:clickable="false"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+            </NumberPicker>
+            <NumberPicker
+                android:id="@+id/min"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="#E8F8F5"
+                android:clickable="false"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+            </NumberPicker>
+            <NumberPicker
+                android:id="@+id/ampm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="#FDEDEC"
+                android:clickable="false"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+            </NumberPicker>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/_20sdp"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.ButtonBarLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#1ABC9C"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="match_parent"
+                android:background="#A2D9CE"
+                android:layout_height="wrap_content"
+                android:text="Cancel" />
+        </android.support.v7.widget.ButtonBarLayout>
+        <android.support.v7.widget.ButtonBarLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#2E86C1"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonSetTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#AED6F1"
+                android:text="Set Time" />
+        </android.support.v7.widget.ButtonBarLayout>
+    </LinearLayout>
+
+</FrameLayout>

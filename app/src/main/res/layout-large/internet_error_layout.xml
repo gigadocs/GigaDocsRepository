@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    app:cardElevation="@dimen/_15sdp"
+    app:cardCornerRadius="@dimen/_15sdp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/image_viewFrownFace"
+    android:layout_width="match_parent"
+    android:src="@drawable/frown"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/_50sdp"
+    android:layout_marginRight="@dimen/_50sdp"
+    android:layout_marginTop="@dimen/_50sdp"
+    android:layout_marginBottom="@dimen/_40sdp"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textSize="@dimen/_16sdp"
+        android:gravity="center"
+        android:text="@string/internet_failure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_6sdp"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/buttonRetry"
+        android:text="@string/retry"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/buttonDismiss"
+        android:text="Dismiss"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

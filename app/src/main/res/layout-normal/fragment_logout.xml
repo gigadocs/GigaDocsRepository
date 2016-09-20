@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.datappsinfotech.gigadocs.fragments.LogoutFragment">
+<TextView
+    android:id="@+id/text_viewErrorMessage"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="@dimen/_10sdp"
+    android:textSize="@dimen/_20sdp"
+    android:textColor="@color/accent"
+    android:layout_height="wrap_content" />
+</LinearLayout>
